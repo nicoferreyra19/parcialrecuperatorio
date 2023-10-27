@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotiseria</title>
+    <link  href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>ROTISERIA EL GRINGO</h1>
+    <div>
+        <form action="#">
+            <legend>
+                CONFIGURAR TU PLATO
+            </legend>
+            <div>
+                <label for=""> Fecha de pedido</label>
+                <input type="date" value="" disabled>
+                
+            </div>
+                
+            <div>
+                <label for="">Seleccione el plato</label>
+                <select name="" id="platos" enabled>
+                    <option value="hambDC">Hamburguesa Doble Carne</option>
+                    <option value="hambC">Hamburguesa Comun</option>
+                    <option value="hambI">Hamburguesa Infantil</option>
+                </select>
+                <button id="agregarplato" enabled>Agregar</button>
+            </div>
+
+            <div >
+                <label for="">Agregar Ingredientes adicionales</label>
+                <select name="" id="adicionales" disabled>
+                    <option value="Papas">Papas</option>
+                    <p id="op1" value="1000" style="display: none;"></p>
+                    <option value="Cebollas">Cebollas</option>
+                    <p id="op2" value="3000" style="display: none;"></p>
+                    <option value="Adherezos">Adherezos</option>
+                    <p id="op3" value="6000" style="display: none;"></p>
+                </select>
+                <button id="agregarAdicionales" disabled>Agregar</button>
+            </div>
+            
+            
+        </form>
+        
+        
+
+    </div>
+
+    <div>
+        <table id="tabla">
+            <thead id="thead">
+                <tr>
+                    <th>Items Incluidos</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+    
+            </thead>
+            <tbody id="tbody">
+    
+            </tbody>
+        </table>
+
+    </div>
+
+    <div>
+        <button id="enviar">ENVIAR AL CARRITO</button>
+    </div>
+    
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
